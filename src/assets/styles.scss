@@ -1,0 +1,19 @@
+@use 'color-palette' as *;
+@import '../assets/color-palette';
+
+$font-family: 'Poppins';
+
+
+* {
+    font-family: $font-family;
+    color: neutral(500);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: neutral(500);
+}

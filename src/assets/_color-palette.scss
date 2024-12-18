@@ -1,0 +1,53 @@
+
+//secondary
+$secondary: (
+  50: #f3ebe5,
+  100: #e5d4c9,
+  200: #d7bda8,
+  300: #caa689,
+  400: #bc9072,
+  500: #a98a6e,
+  600: #8a6e57,
+  700: #6c5543,
+  800: #4d3c30,
+  900: #2f251e
+);
+
+//secondary
+$primary: (
+  50: #eaf0f1,
+  100: #d1e0e2,
+  200: #b5cfd1,
+  300: #99bdbf,
+  400: #84aeb2,
+  500: #709196,
+  600: #5b7477,
+  700: #45595b,
+  800: #303e40,
+  900: #1b2526
+);
+
+$neutral:(
+    50: #ffffff,
+    100: #fffdf5,
+    200: #fffbea,
+    300: #fff6d5,
+    400: #fff2bf,
+    500: #fff9eb,
+    600: #ccc7bb,
+    700: #99968a,
+    800: #666458,
+    900: #333329
+  );
+
+  @function neutral($key) {
+    @return map-get($neutral, $key);
+  }
+
+  @function primary($key) {
+    @return map-get($primary, $key);
+  }
+
+  @function secondary($key) {
+    @return map-get($secondary, $key);
+  }
